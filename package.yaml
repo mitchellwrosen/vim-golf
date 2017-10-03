@@ -1,9 +1,15 @@
 name: vim-golf
 
+default-extensions:
+  - LambdaCase
+  - RecursiveDo
+  - ScopedTypeVariables
+
 executables:
   vim-golf:
     main: Main.hs
     ghc-options: -freverse-errors -threaded -Wall
     dependencies:
-      - base            >= 4.7 && < 5
-      - reactive-banana >= 1.1 && < 1.2
+      - base                       < 5
+      - reactive-banana >= 1.1  && < 1.2
+      - vty                        < 5.18
