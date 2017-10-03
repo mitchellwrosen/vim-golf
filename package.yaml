@@ -1,0 +1,9 @@
+name: vim-golf
+
+executables:
+  vim-golf:
+    main: Main.hs
+    ghc-options: -freverse-errors -threaded -Wall
+    dependencies:
+      - base            >= 4.7 && < 5
+      - reactive-banana >= 1.1 && < 1.2
