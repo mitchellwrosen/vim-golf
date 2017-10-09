@@ -1,1 +1,9 @@
 resolver: lts-9.6
+packages:
+  - .
+  - location:
+      git: git@github.com:mitchellwrosen/reactive-banana
+      commit: 'dfdb3b3'
+    subdirs:
+      - reactive-banana
+    extra-dep: true

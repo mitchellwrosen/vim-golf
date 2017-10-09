@@ -9,10 +9,10 @@ cabal-version:  >= 1.10
 
 executable vim-golf
   main-is: Main.hs
-  default-extensions: LambdaCase RecursiveDo ScopedTypeVariables
+  default-extensions: ApplicativeDo LambdaCase RecursiveDo ScopedTypeVariables
   ghc-options: -freverse-errors -threaded -Wall
   build-depends:
       base                       < 5
-    , reactive-banana >= 1.1  && < 1.2
+    , reactive-banana >= 1.2  && < 1.3
     , vty                        < 5.18
   default-language: Haskell2010
